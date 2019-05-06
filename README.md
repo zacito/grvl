@@ -1,2 +1,1 @@
-# gravel
-Gravel - CSS Framework
+# Gravel - CSS Framework
