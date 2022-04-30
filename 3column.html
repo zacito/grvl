@@ -1,0 +1,116 @@
+<!--v2 10/26/21-->
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    <link rel="stylesheet" href="grvl.css" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/FeedEk.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('#divRss3').FeedEk({
+        FeedUrl: '', MaxCount: 10, ShowDesc: false, ShowPubDate:false
+      });
+    });
+</script>
+  <script  src="./script.js"></script>
+  <style>
+  a{color: black;text-decoration: none;}
+  article{width: 45%;}
+  aside{width: 35%;}
+  body{color: black;font-family: arial;font-size: 14px;line-height: 1.2;margin: 11px 200px;}
+div{display: flex;}
+div a{width: 100%;}
+footer{margin: 20px 0 0 10px;text-align: center;}
+footer p{color: grey;font-size: 13px; }
+img{height: auto; width: 55%;}
+nav{width: 20%;}
+nav a{display: block;padding: 2px;}
+p{color: black;margin: 0;}
+.a{border-bottom: 2px solid lightgray;border-top: 2px solid lightgray;display: flex;}
+.a a{font-weight: bold;padding: 5px;text-align: center;width: 100%;}
+.a a:hover{background: lightgreen;}
+.b{}
+.bar{background: #f2f2f2;display:flex;margin: 2px;padding: 2px;}
+.bar1{font-weight: bold;width: 40%;}
+.bar1 img{padding: 0 0 0 10px;}
+.bar2{display:flex;flex-wrap:wrap;width:100%;}
+.bar2 a{padding: 0;width:31%;}
+.c{display: none;}
+.cal{display: initial;}
+.content{margin: 5px;}
+.line{border-bottom: 1px solid lightgray;margin: 10px 100px;}
+.title{border-bottom: 3px solid lightgreen;font-size: 24px;font-weight: bold;letter-spacing: -2px;margin: 3px;width: 10%;}
+#b{font-weight: bold;}
+#mlb{width: 70%;}
+
+@media (max-width: 700px){
+  article{margin: 5px 0;order: 3;width: 100%;}
+  aside{margin: 5px 0;order: 1;width: 100%;}
+  body{font-size: 16px;overflow-x: hidden;margin:11px;}
+  header{order: 2;}
+  nav{margin: 5px 0;order: 4;width: 100%;}
+  nav a{padding: 5px;}
+  .a{display: none;flex-wrap: wrap;}
+  .a a{padding: 10px;width:18%}
+  .bar1 a{padding: 3px;}
+  .bar2 a{padding: 3px;width:31%;}
+  .c{display: initial;}
+  .c{border-bottom: 2px solid lightgray;border-top: 2px solid lightgray;display: flex; flex-wrap: wrap;}
+.c a{font-weight: bold;padding: 10px;text-align: center;width: 20%;}
+.c a:hover{background: lightgreen;}
+  .cal{display: none;}
+.content{flex-direction: column;margin: 0;}
+.title{width: 20%}
+#divRss3 a{font-size: 14px;}
+#divRss3 li{margin: 0;padding: 0;}
+}
+</style>
+</head>
+<body>
+<header>
+<p class="title"></p>
+</header>
+<header>
+   <div class="a">
+
+  <a href="">Link</a>
+
+ </div>
+</header>
+ <div class="content">
+<nav>
+
+ <a href="">Link</a>
+<div class="line"></div>
+ <a href="">Link</a>
+
+  </nav>
+<article>
+ 
+</article>
+<aside>
+  <div id="divRss3"></div>
+     <div class="c">
+
+   <a href="">Link</a>
+
+ </div>
+
+  </aside>
+</div>
+<footer>
+ <p>
+  <a href="/">Link</a> | 
+   <a href="">Link</a> |
+ </p>
+ <p>Words words words</p>
+</footer>
+</body>
+</html>
